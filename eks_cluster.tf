@@ -1,3 +1,5 @@
+// Create an EKS cluster. The recent version is 1.30. Any version from 1.29 to 1.30 is acceptable.
+
 resource "aws_eks_cluster" "eks" {
   name     = "eks-demo"
   role_arn = aws_iam_role.eks_cluster_role.arn

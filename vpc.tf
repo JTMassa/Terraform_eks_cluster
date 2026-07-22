@@ -1,3 +1,5 @@
+// Create a VPC for the EKS cluster. You can customize the CIDR block as needed. You can also use the default VPC in your AWS account. But remember, you will call it here as a data source.
+
 resource "aws_vpc" "eks_vpc" {
   cidr_block = "10.0.0.0/16"
 }

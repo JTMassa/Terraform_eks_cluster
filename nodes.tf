@@ -1,3 +1,5 @@
+// Create an EKS node group. This will create the worker nodes for your EKS cluster. if you don't specify a node group name, Terraform will generate one for you. Depends on the EKS cluster and IAM role.
+
 resource "aws_eks_node_group" "node_group" {
   cluster_name    = aws_eks_cluster.eks.name
   node_group_name = "eks-demo-ng"
